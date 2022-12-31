@@ -1,0 +1,19 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: javaOdev
+  datasource:
+    url: jdbc:mysql://localhost:3306/javaodevdb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: 1231233100e
+    hikari:
+      connection-timeout: 3000000
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.dialet: org.hibernate.dialect.MySQL5Dialect
